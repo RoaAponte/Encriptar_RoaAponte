@@ -16,8 +16,8 @@
         </header>
         <div class="container">
 			<div class="left">
-			    <textarea type="text" class="input-texto1" name="texto1" rows="10" cols="37" placeholder="Ingrese texto aquí"></textarea>
-                <h6>Solo letras minúsculas y sin acentos</h6>
+			    <textarea type="text" class="input-texto1" name="texto1" inputmode="text" placeholder="Ingrese texto aquí"></textarea>
+                <h6 class="condicion">Solo letras minúsculas y sin acentos</h6>
                 <br>
                 <ul class="botones">
                     <li><button type="button" onclick="btnencriptar()" onclick="txtDer()" id="encriptar-texto">ENCRIPTAR</button></li>
@@ -27,7 +27,7 @@
 
             <div class="right">
                 <h1 class="texto-der"></h1>
-                <textarea type="text" class="input-texto2" name="texto2" rows="25" cols="60" placeholder="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar a tu izq."></textarea>
+                <textarea type="text" class="input-texto2" name="texto2" placeholder="Ningún mensaje fue encontrado! Ingresa el texto que desees encriptar o desencriptar en el anterior campo"></textarea>
                 <button type="button" onclick="copiarText()" id="copiarTxt">COPIAR</button>
             </div>
         </div>

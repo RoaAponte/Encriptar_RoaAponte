@@ -3,23 +3,23 @@
 }
 
 .logo{
-    position: absolute;
-    margin-left: 84px;
-    margin-top: 40px;
+    display: block;
     background-color: #F3F5FC;
+    padding: 4rem 0 2rem 2rem;
 }
 
 .left{
     float: left;
-    width: 55%;
-    padding-left: 5%;
+    width: 30%;
+    padding: 0 3rem 2rem 2rem;
 }
 
 .input-texto1{
     mix-blend-mode:darken;
-    border-color: #F3F5FC;
-    font-size: 32px;
-    margin-top: 168px;
+    border-color: #142f92;
+    font-size: 30px;
+    height: 20rem;
+    width: 30rem;
 }
 
 ::placeholder{
@@ -29,14 +29,14 @@
 .botones li {
     display: inline-block;
     vertical-align: top;
-    padding-right: 2%;
+    padding-right: 5%;
 }
 
 #encriptar-texto{
     background-color: #0A3871;
     color: white;
     font-size: 15px;
-    width: 328px;
+    width: 238px;
     height: 67px;
 }
 
@@ -44,27 +44,81 @@
     background-color: #D8DFE8;
     color: #0A3871;
     font-size: 15px;
-    width: 328px;
+    width: 238px;
     height: 67px;
 }
 
 .right{
     float: right;
     width: 40%;
-    padding-right: 0%;
+    padding: 0 3rem 2rem 2rem;
 }
 
 .texto-der{
     font-size: 28px;
-    margin-top: 108px;
+}
+
+.input-texto2{
+    border-color: #142f92;
+    font-size: 15px;
+    height: 20rem;
+    width: 25rem;
+    margin-right: 2rem;
 }
 
 #copiarTxt{
+    display: inline-block;
+    vertical-align:baseline;
     background-color: white;
     color: #0A3871;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 1.3rem;
     padding: 12px;
-    width: 178px;
-    height: 47px;
+    width: 158px;
+    height: 57px;
 }
+
+@media screen and (min-width: 768px) {
+    .logo{
+        padding: none;
+        display: block;
+        margin-left:48%;
+    }
+
+    .left{
+        float: none;
+        width: 90%;
+        margin-left: 15%;
+    }
+    .input-texto1{
+        font-size: 60px;
+        height: 25rem;
+        width: 70%;
+    }
+    .condicion{
+        font-size: 2rem;
+    }
+    #encriptar-texto{
+        font-size: 25px;
+    }
+    #desencriptar-texto{
+        font-size: 25px;
+    }
+
+    .right{
+        float: none;
+        width: 90%;
+        margin-left: 10%;
+    }
+    .input-texto2{
+        font-size: 40px;
+        height: 25rem;
+        width: 85%;
+        margin-right: 2rem;
+        margin-top: 5rem;
+    }
+    #copiarTxt{
+        font-size: 25px;
+    }
+}
+
