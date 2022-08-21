@@ -6,12 +6,18 @@
     display: block;
     background-color: #F3F5FC;
     padding: 4rem 0 2rem 2rem;
+    margin-left:48%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
 }
 
 .left{
-    float: left;
-    width: 30%;
-    padding: 0 3rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-texto1{
@@ -29,7 +35,6 @@
 .botones li {
     display: inline-block;
     vertical-align: top;
-    padding-right: 5%;
 }
 
 #encriptar-texto{
@@ -49,9 +54,9 @@
 }
 
 .right{
-    float: right;
-    width: 40%;
-    padding: 0 3rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
 }
 
 .texto-der{
@@ -61,42 +66,32 @@
 .input-texto2{
     border-color: #142f92;
     font-size: 15px;
-    height: 20rem;
+    height: 18.5rem;
     width: 25rem;
     margin-right: 2rem;
 }
 
 #copiarTxt{
-    display: inline-block;
-    vertical-align:baseline;
     background-color: white;
     color: #0A3871;
     font-size: 15px;
-    margin-top: 1.3rem;
     padding: 12px;
     width: 158px;
     height: 57px;
 }
 
-@media screen and (min-width: 768px) {
-    .logo{
-        padding: none;
-        display: block;
-        margin-left:48%;
-    }
 
+@media screen and (max-width: 768px) {
+    
     .left{
-        float: none;
-        width: 90%;
-        margin-left: 15%;
+        margin-bottom: 1rem
     }
     .input-texto1{
         font-size: 60px;
         height: 25rem;
-        width: 70%;
     }
     .condicion{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #encriptar-texto{
         font-size: 25px;
@@ -104,21 +99,12 @@
     #desencriptar-texto{
         font-size: 25px;
     }
-
-    .right{
-        float: none;
-        width: 90%;
-        margin-left: 10%;
-    }
     .input-texto2{
         font-size: 40px;
         height: 25rem;
-        width: 85%;
-        margin-right: 2rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     #copiarTxt{
         font-size: 25px;
     }
 }
-
